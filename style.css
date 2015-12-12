@@ -2,7 +2,7 @@
 	font-family: "Arial", serif;
 	font-size: 15px;
 	width: 880px;
-	padding-left: 11.5px;
+	padding-left: 9px;
 	margin-top: 40px;
     margin-left: 220px;
 }
@@ -37,6 +37,11 @@ li a {
 
 h1 {
 	font-family: "Lucida Console", Times;
+}
+
+img {
+    float: right;
+    margin: 0px 12px 20px 20px;
 }
 
 /* unvisited link */
