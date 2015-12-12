@@ -4,118 +4,19 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Historicizing Project WRIT 4662W">
 	<meta name="author" content="Zoey Thao">
-<title> WRIT 3662W Historicizing Project </title>
+	<title> WRIT 3662W Historicizing Project </title>
 </head>
 <body>
-	<h1>
-	Development of CSS
-	</h1>
-		<p>
-		Cascading Style Sheets (CSS) is a style sheet language that uses markup language to describe the look of a document.
-		</p>
-		<p>
-		Since the start of Standard Generalized Markup Language (SGML), style sheets have been around in one form or another. Many were interested in improving the capabilities of web presentation, and thus nine different style sheet languages were proposed. Of the nine, Cascading HTML Style Sheets and Stream-based Style Sheet Proposal were especially influential on the development of CSS
-		</p>
-		<p>
-		The development of CSS started in 1994, as the web became a platform for electronic publishing in need of a way to style documents. Since 1990, when HTML was first introduced, separating the structure of a document from its layout had always been a goal. CSS took into account the design wishes of the author, reader, and the capabilities of the display devices as well as the browser.
-		</p>
-		<p>
-		CSS was completed in 1996 by Håkon Wium Lie, Bert Bos, and the World Wide Web Consortium (W3C), increasing the sophisticated presentation and accessibility of websites. Some browsers supported parts of CSS-1 in 1997, but standard CSS did not become fully usable until 2001.
-		</p>
-	<h1>
-	CSS Levels
-	</h1>
-		<p>
-		There are various levels of CSS, each building upon the last.
-		</p>
-		<h2>
-		CSS 1
-		</h2>
-			<p>
-				<ul>
-					<li>
-					Font properties such as typeface and emphasis
-					<li>
-					Color of text, background, and other elements
-					<li>
-					Text attributes such as spacing between words, letters, and lines of text
-					<li>
-					Alignment of text, images, tables, and other elements
-					<li>
-					Margin, border, padding, and positioning for most elements
-				</ul>
-			</p>
-		<h2>
-		CSS 2
-		</h2>
-			<p>
-				<ul>
-					<li>
-					Absolute, relative, and fixed positioning of elements
-					<li>
-					Concept of media types
-					<li>
-					Support for aural style sheets
-					<li>
-					New font properties
-				</ul>
-			</p>
-		<h2>
-		CSS 2.1
-		</h2>
-			<p>
-				<ul>
-					<li>
-					Fixes errors in CSS 2
-					<li>Removes poorly supported featuress and adds already implemented browser extensions to the specifications
-				</ul>
-			</p>
-		<h2>
-		CSS 3
-		</h2>
-			<p>
-				<ul>
-					<li>
-					Divided into modules, each adding new or extending features defined in CSS 2
-				</ul>
-			</p>
-		<h2>
-		CSS 4
-		</h2>
-			<p>
-				<ul>
-					<li>
-					Split into modules
-				</ul>
-			</p>
-	<h1>
-	CSS Frameworks
-	</h1>
-		<p>
-		CSS frameworks are pre-prepared libraries with standard styling of web pages using CSS language and include:
-			<ul>
-				<li>
-				Foundation,
-				<li>
-				Blueprint,
-				<li>
-				Boostrap, and
-				<li>
-				Cascade Framework and Materialize
-			</ul>
-		CSS frameworks provide ready-made options that can be used for designing an dlaying out a webpage. The frameworks are usually external style sheets that are referenced in head element of HTML. Most web authors use frameworks to prototype or learn from; they prefer to develop CSS for their own websites so they don’t have unused features in their styling.
-		</p>
-	<h1>
-	Browser Compatibility
-	</h1>
-		<p>
-		The CSS 1 specification was completed in 1996, the same year that Microsoft’s Internet Explorer (IE) 3 was released which featured some limited support for CSS. The first browser to fully support CSS 1 was IE 5.0, followed by many others, some of which implement parts of CSS 2.
-		</p>
-	<h1>
-	Box Model
-	</h1>
-		<p>
-		The box model defines how a box and its attributes relate to one another. There are four distinct parts to the box model: margin, border, padding, and content area. When you use CSS to define the width and height of your box, you are only defining the content area itself.
-		</p>
+	<h1 id="intro"> Introduction </h1>
+		<p> According to Håkon Wium Lie and Bert Bos (1999), separation of a document’s structure from its layout had been a goal of HTML since 1990, and the need for this separation became even more apparent as the Web became a means of electronic publishing in 1994. Cascading Style Sheets (CSS) was developed by the World Wide Web Consortium (W3C) in 1996 as a style sheet used in markup language to separate the document content from the document presentation (“CSS Developer Guide,” 2014). An interesting concept that Lie and Bos noted in Cascading Style Sheets: Designing for the Web, was how CSS took into account that neither the author nor the reader could design a Web style document on their own, but rather their wishes had to be combined, or “cascaded,” together. </p>
+		<p> There are various levels of CSS, each building on the last. The box model was first introduced in CSS 1, called the formatting model. CSS 2 and CSS 2.1 added revisions to the box model, further detailing its properties. However, earlier versions of Internet Explorer did not correctly display the box model on a web page, with the issue being described as the Internet Explorer bug. Christina Haas (1999) mentions Wiebe Bijker’s theory of sociotechnical change in On the Relationship Between Old and New Technologies, explaining the role of contingency and constraint in the use of literacy technologies. This aspect of Bijker’s theory can be seen in user preferences for either the table layout or the div layout, depending on how easy it is to use and maintain. </p>
+	<h1 id="boxmodel"> The Box Model </h1>
+		<p> The box model is a div layout in CSS to create a design and layout for web content (Jai Pearce). There are four distinct parts to the box model: margin, border, padding, and content (Dave Child, 2004). </p>
+		<p> CSS 1 introduces a simple, box-oriented formatting model, all with a core content area surrounded by optional margins, border, and padding (Lie & Bos, 1996). </p>
+		<p> According to W3C, CSS 2 and CSS 2.1 added more details to the formatting model in CSS 1 and refer to it as the box model. Each box still has a content area with optional surrounding margin, border, and padding, but these properties can be further broken down into top, right, bottom, and left segments. The content width and height depend on whether the box contains text or other details. </p>
+	<h1 id="iebug"> The Internet Explorer Bug </h1>
+		<p> There were few HTML elements prior to HTML 4 and CSS that supported border and padding, so there wasn’t a clear definition of the width and height of elements. The HTML width attribute defined the table’s width, including its border, while the table cell defined padding. The Internet Explorer bug refers to how earlier versions of Internet Explorer incorrectly displayed the box model or sizing of elements on a web page. </p>
+		<p> According to Lie and Bos (1996) about CSS 1 specifications, “when a width or height is explicitly specified for any block-level element, it should determine only the width or height of the visible element, with the padding, borders, and margins applied afterwards.” However, in earlier versions of Internet Explorer, content, padding, and borders were incorrectly interpreted, resulting in narrower and shorter box renders than that of the standard box (Silver, 2006). </p>
+		<p> Markus Mielke (2006) explains that there have been a variety of options developed to force Internet Explorer 5 and earlier version to display Web pages with the W3C box model. He describes the “box model hack,” developed by Tantek Ҫelik, as one of the best known work arounds. It involves a width declaration specification for Internet Explorer, which is overridden by another declaration that works with CSS compatible browsers. However, Mielke also explains that these hacks get complicated with Internet Explorer 7 and later versions as undesired results are displayed. </p>
 </body>
 </html>
