@@ -1,9 +1,17 @@
+#nav {
+	font-family: "Arial", serif;
+	font-size: 15px;
+	width: 880px;
+	padding-left: 11.5px;
+	margin-top: 40px;
+    margin-left: 220px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
 }
 
 li {
@@ -11,9 +19,42 @@ li {
 }
 
 li a {
-    display: block;
-    color: white;
+    color: blue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+#content {
+	font-family: "Arial", serif;
+	width: 880px;
+	padding: 5px;
+    border-left: 5px solid black;
+	border-right: 5px solid black;
+	margin-top: 40px;
+    margin-left: 220px;
+}
+
+h1 {
+	font-family: "Lucida Console", Times;
+}
+
+/* unvisited link */
+a:link {
+    color: blue;
+}
+
+/* visited link */
+a:visited {
+    color: purple;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
 }
